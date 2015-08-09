@@ -39,7 +39,8 @@ return {playclip:function(){throw new Error('Su navegador no soporta audio HTML5
 //Inicializar sonidos
 var hover1 = createsoundbite('https://googledrive.com/host/0B3b6MFUtZc42dzVwTEdJM1JwZHc/silbido.mp3');
 var hover2 = createsoundbite('https://googledrive.com/host/0B3b6MFUtZc42dzVwTEdJM1JwZHc/claxon.mp3');
-
+var hover3= createsoundbite('explosion2.wav');
+var hover4= createsoundbite('/explosion2.wav');
 //Nótese que se pueden añadir ficheros con otras extensiones para mayor compatibilidad
 var click1 = createsoundbite('https://googledrive.com/host/0B3b6MFUtZc42dzVwTEdJM1JwZHc/click.mp3','https://googledrive.com/host/0B3b6MFUtZc42dzVwTEdJM1JwZHc/clock.mp3');
 //]]>
@@ -48,6 +49,10 @@ var click1 = createsoundbite('https://googledrive.com/host/0B3b6MFUtZc42dzVwTEdJ
 <body>
 <a href="javascript:void();" onclick="click2.playclip()">Efecto hover 2</a>
 
-<div class="demo" onmouseover="hover2.playclip()">Hover 2</div></div>
+<div class="demo" onmouseover="hover2.playclip()">Hover 2</div>
+<br>
+<div class="demo" onmouseover="hover3.playclip()">sonido.wav</div> 
+<br>
+<div class="demo" onmouseover="hover4.playclip()">/sonido.wav</div> 
 </body>
 </html>
