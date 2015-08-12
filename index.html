@@ -45,7 +45,7 @@
 		
 		// Get the new media file
 		var yourSelect = document.getElementById('playlist');		
-                myMedia = new Media(yourSelect.options[yourSelect.selectedIndex].value, stopAudio, null);
+                myMedia = new Media("/android_asset/www/"+src, stopAudio, null);
 		// Update media position every second
 	        var mediaTimer = setInterval(function() {
 	        // get media position
@@ -78,6 +78,8 @@
 	   </select>
    </p>
    <a href="#_index.html" id="play" onclick="playAudio('explosion.wav')"><img  src="images/play.png">play</a>
+      <a href="#_index.html" id="play" onclick="updateMedia('explosion.wav')">update y eso</a>
+
    <a href="#" onclick="stopAudio()"><img id="stop" src="images/stop.png">stop</a>
  </body>
 </html>
