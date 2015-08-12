@@ -12,7 +12,7 @@
 	
     function playAudio(src) {
 		if (!playing) {
-		myMedia="/android_asset/www/explosion.wav"+src;
+		myMedia="/android_asset/www/"+src;
                         myMedia.play();	
 			document.getElementById('play').src = "images/pause.png";
 			playing = true;	
